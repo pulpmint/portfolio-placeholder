@@ -1,7 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-import Header from "@/containers/Header.astro";
 import About from "@/containers/About.astro";
 import Work from "@/containers/Work.astro";
 import Experience from "@/containers/Experience.astro";
@@ -10,10 +9,12 @@ import Skills from "@/containers/Skills.astro";
 import Socials from "@/containers/Socials.astro";
 import Faqs from "@/containers/Faqs.astro";
 import Footer from "@/containers/Footer.astro";
+
+import Header from "@/components/Header.astro";
 ---
 
 <Layout>
-  <Header />
+  <Header title="Hello!" />
 
   <main>
     <About />
