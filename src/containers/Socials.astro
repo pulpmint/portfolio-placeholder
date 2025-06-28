@@ -1,0 +1,28 @@
+---
+import Heading from "@/components/Heading.astro";
+import Link from "@/components/Link.astro";
+
+import { SOCIALS, USERNAME } from "@/constants/data";
+---
+
+<section>
+  <Heading>🌐 SOCIALS</Heading>
+
+  <table>
+    <tbody>
+      {
+        SOCIALS.map(({ LABEL, LINK }) => (
+          <tr>
+            <td>{LABEL}</td>
+
+            <td align="right">
+              <Link isExternal href={LINK}>
+                @{USERNAME}
+              </Link>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>

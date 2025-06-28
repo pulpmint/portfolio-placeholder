@@ -1,0 +1,28 @@
+---
+import Heading from "@/components/Heading.astro";
+import Link from "@/components/Link.astro";
+
+import { PROJECTS } from "@/constants/data";
+---
+
+<section>
+  <Heading>💻 WORK</Heading>
+
+  <table>
+    <tbody>
+      {
+        PROJECTS.map(({ LABEL, LINK, YEAR }) => (
+          <tr>
+            <td>
+              <Link isExternal href={LINK}>
+                {LABEL}
+              </Link>
+            </td>
+
+            <td align="right">{YEAR}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>

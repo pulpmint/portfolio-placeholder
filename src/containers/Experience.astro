@@ -1,0 +1,27 @@
+---
+import Heading from "@/components/Heading.astro";
+
+import { EXPERIENCES } from "@/constants/data";
+---
+
+<section>
+  <Heading>💼 EXPERIENCE</Heading>
+
+  <table>
+    <tbody>
+      {
+        EXPERIENCES.map(({ DESG, LABEL, YEAR }) => (
+          <tr>
+            <td>
+              <strong>{LABEL}</strong>
+              <br />
+              {DESG}
+            </td>
+
+            <td align="right">{YEAR}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>
