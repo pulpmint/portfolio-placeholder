@@ -1,0 +1,10 @@
+---
+import { META } from "@/constants/data";
+---
+
+<link rel="icon" type="image/x-icon" href={META.FAVICON} />
+{
+  Object.entries(META.APPLE_TOUCH).map(([key, value]) => (
+    <link rel="apple-touch-icon" sizes={`${key}x${key}`} href={value} />
+  ))
+}
