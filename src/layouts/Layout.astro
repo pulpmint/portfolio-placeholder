@@ -1,5 +1,7 @@
 ---
 import { TITLE } from "@/constants/data";
+
+import "@/styles/global.css";
 ---
 
 <!doctype html>
@@ -10,17 +12,18 @@ import { TITLE } from "@/constants/data";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{TITLE}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <slot />
+    <section>
+      <slot />
+    </section>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
