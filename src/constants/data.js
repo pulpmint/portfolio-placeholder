@@ -130,6 +130,7 @@ export const COPYRIGHT = `🧙‍♂️ Manmohan Singh`;
 export const META = {
   TITLE,
   DESC: `${DESC} ${PIXEL_PERFECT}`,
+  CANONICAL: `https://${DOMAIN}`,
   LOCALE: "en_UK",
   TYPE: "website",
   TWITTER_CARD: "summary_large_image",
@@ -151,4 +152,4 @@ export const META = {
     180: "/apple-touch-icon-180x180.png",
     256: "/apple-touch-icon-256x256.png"
   }
-}
+};
