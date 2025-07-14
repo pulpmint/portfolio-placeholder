@@ -129,3 +129,24 @@ export const FAQS = [
 export const MORE_QUESTIONS = "Have more questions?";
 
 export const COPYRIGHT = `🧙‍♂️ Manmohan Singh`;
+
+export const META = {
+  TITLE,
+  DESC: `${DESC} ${PIXEL_PERFECT}`,
+  CANONICAL: `https://${DOMAIN}`,
+  LOCALE: "en_UK",
+  TYPE: "website",
+  FAVICON: "/favicon.ico",
+  APPLE_TOUCH: {
+    57: "/apple-touch-icon-57x57.png",
+    60: "/apple-touch-icon-60x60.png",
+    72: "/apple-touch-icon-72x72.png",
+    76: "/apple-touch-icon-76x76.png",
+    114: "/apple-touch-icon-114x114.png",
+    120: "/apple-touch-icon-120x120.png",
+    144: "/apple-touch-icon-144x144.png",
+    152: "/apple-touch-icon-152x152.png",
+    180: "/apple-touch-icon-180x180.png",
+    256: "/apple-touch-icon-256x256.png"
+  }
+};
