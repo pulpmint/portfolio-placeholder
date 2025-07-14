@@ -1,0 +1,10 @@
+---
+const { isExternal, target, rel, ...rest } = Astro.props;
+
+const finalTarget = isExternal ? "_blank" : target;
+const finalRel = isExternal ? "noopener noreferrer" : rel;
+---
+
+<a {...rest} target={finalTarget} rel={finalRel}>
+  <slot />
+</a>

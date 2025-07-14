@@ -1,0 +1,30 @@
+---
+import Heading from "@/components/Heading.astro";
+import Link from "@/components/Link.astro";
+
+import { AWARDS } from "@/constants/data";
+---
+
+<section>
+  <Heading>🏆 AWARDS & RECOGNITION</Heading>
+
+  <table>
+    <tbody>
+      {
+        AWARDS.map(({ AWARD, LABEL, LINK, YEAR }) => (
+          <tr>
+            <td>
+              <Link isExternal href={LINK}>
+                {AWARD}
+              </Link>
+              <br />
+              {LABEL}
+            </td>
+
+            <td align="right">{YEAR}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>

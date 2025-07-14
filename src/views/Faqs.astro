@@ -1,0 +1,46 @@
+---
+import Heading from "@/components/Heading.astro";
+import Link from "@/components/Link.astro";
+
+import { FAQS, MAIL, MAIL_TO, MORE_QUESTIONS } from "@/constants/data";
+---
+
+<section>
+  <Heading>🙋 FAQS</Heading>
+
+  <table>
+    <tbody>
+      {
+        FAQS.map(({ QUESTION, ANSWER }) => (
+          <tr>
+            <td><strong>Q:</strong></td>
+            <td><strong>{QUESTION}</strong></td>
+          </tr>
+
+          <tr>
+            <td>A:</td>
+            <td>
+              {ANSWER}
+              <br />
+              <br />
+            </td>
+          </tr>
+        ))
+      }
+
+      <tr>
+        <td><strong>Q:</strong></td>
+        <td><strong>{MORE_QUESTIONS}</strong></td>
+      </tr>
+
+      <tr>
+        <td>A:</td>
+        <td>
+          <Link isExternal href={MAIL_TO}>
+            {MAIL}
+          </Link>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>

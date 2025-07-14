@@ -1,0 +1,21 @@
+---
+import Heading from "@/components/Heading.astro";
+
+import { SKILLS } from "@/constants/data";
+---
+
+<section>
+  <Heading>🔨 SKILLS</Heading>
+
+  <table>
+    <tbody>
+      {
+        SKILLS.map(skill => (
+          <tr>
+            <td>{skill}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>

@@ -1,9 +1,29 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-import { TITLE } from "@/constants/data";
+import Header from "@/views/Header.astro";
+import About from "@/views/About.astro";
+import Work from "@/views/Work.astro";
+import Experience from "@/views/Experience.astro";
+import Awards from "@/views/Awards.astro";
+import Skills from "@/views/Skills.astro";
+import Socials from "@/views/Socials.astro";
+import Faqs from "@/views/Faqs.astro";
+import Footer from "@/views/Footer.astro";
 ---
 
 <Layout>
-  <p>{TITLE}</p>
+  <Header />
+
+  <main>
+    <About />
+    <Work />
+    <Experience />
+    <Awards />
+    <Skills />
+    <Socials />
+    <Faqs />
+  </main>
+
+  <Footer />
 </Layout>
