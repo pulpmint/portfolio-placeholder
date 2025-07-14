@@ -136,6 +136,12 @@ export const META = {
   CANONICAL: `https://${DOMAIN}`,
   LOCALE: "en_UK",
   TYPE: "website",
+  TWITTER_CARD: "summary_large_image",
+  OG_IMG_WIDTH: "1200",
+  OG_IMG_HEIGHT: "630",
+  OG_IMG: "/manmohan-singh-home-og.png",
+  OG_IMG_NAME: "Manmohan Singh Home OG.png",
+  OG_IMG_TYPE: "image/png",
   FAVICON: "/favicon.ico",
   APPLE_TOUCH: {
     57: "/apple-touch-icon-57x57.png",
