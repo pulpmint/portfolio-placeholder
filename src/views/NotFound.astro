@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+
+import Link from "@/components/Link.astro";
+
+import NotFoundImg from "@/assets/not-found.gif";
+---
+
+<section>
+  <p>
+    <strong>404 - Not found!</strong>
+    The platform does not exist, or maybe it does?
+  </p>
+
+  <Link href="/">For now, go back to home</Link>
+
+  <Image src={NotFoundImg} alt="404 - Not found!" />
+</section>
