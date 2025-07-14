@@ -1,0 +1,2 @@
+export const PUBLIC_MIX_PANEL_PROJECT_KEY = import.meta.env
+  .PUBLIC_MIX_PANEL_PROJECT_KEY;

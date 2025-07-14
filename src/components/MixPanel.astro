@@ -1,0 +1,27 @@
+<script>
+  import mixpanel from "mixpanel-browser";
+
+  import { PUBLIC_MIX_PANEL_PROJECT_KEY } from "@/constants/envs";
+  import { CUSTOM_EVENTS } from "@/constants/events";
+
+  import { getMixPanelEventUrl } from "@/utils/events";
+
+  mixpanel.init(PUBLIC_MIX_PANEL_PROJECT_KEY, {
+    persistence: "localStorage",
+    ignore_dnt: true,
+    autocapture: false
+  });
+
+  mixpanel.track(CUSTOM_EVENTS.PAGE_VIEW, {
+    page: getMixPanelEventUrl()
+  });
+
+  Object.values(document.getElementsByTagName("a")).forEach(element => {
+    element.addEventListener("click", () => {
+      mixpanel.track(CUSTOM_EVENTS.LINK_CLICK, {
+        href: element.getAttribute("href"),
+        page: getMixPanelEventUrl()
+      });
+    });
+  });
+</script>
