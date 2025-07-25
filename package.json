@@ -13,7 +13,9 @@
     "mixpanel-browser": "^2.66.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.20",
     "@types/mixpanel-browser": "^2.60.0",
+    "lodash": "^4.17.21",
     "prettier": "^3.6.2",
     "pretty-quick": "^4.2.2",
     "simple-git-hooks": "^2.13.0"
