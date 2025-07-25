@@ -11,7 +11,7 @@ export const TAGLINE = "Building things for the Web";
 export const TITLE = `${NAME} - ${TAGLINE}`;
 export const DESC = `A web developer based in India. Working with JavaScript & Figma. ${TAGLINE}.`;
 
-export const GREETINGS = `Hey there! I am ${NAME}.`;
+export const GREETINGS = `I am ${NAME}.`;
 
 export const PIXEL_PERFECT =
   "Crafting pixel-perfect, secure & performant web experiences with great attention to detail.";
