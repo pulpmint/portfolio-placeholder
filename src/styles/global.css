@@ -4,6 +4,12 @@
   --text: #404040;
   --base: #749473;
   --base-light: #e3eae1;
+  --cursor-normal: url("/cursor-normal.svg");
+  --cursor-pointer: url("/cursor-pointer.svg");
+}
+
+html {
+  cursor: var(--cursor-normal), auto;
 }
 
 body {
@@ -49,6 +55,7 @@ h2 {
 a {
   color: var(--base);
   font-weight: 700;
+  cursor: var(--cursor-pointer), auto;
 }
 
 a:hover {
