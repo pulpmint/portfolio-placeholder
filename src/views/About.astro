@@ -1,25 +1,24 @@
 ---
-import Greetings from "@/components/Greetings.astro";
 import Heading from "@/components/Heading.astro";
 import Link from "@/components/Link.astro";
 
-import { DESC, GREETINGS, HASHNODE, PIXEL_PERFECT } from "@/constants/data";
+import {
+  DESC,
+  DESIGN_DEV,
+  GREETINGS,
+  HASHNODE,
+  PIXEL_PERFECT
+} from "@/constants/data";
 ---
 
 <section>
   <Heading>👤 ABOUT</Heading>
 
-  <p>
-    <span></span>
-    <strong>{GREETINGS}</strong>
-  </p>
-
-  <p>{DESC}</p>
+  <p>{GREETINGS} {DESC}</p>
   <p>{PIXEL_PERFECT}</p>
+  <p>{DESIGN_DEV}</p>
 
   <Link isExternal href={HASHNODE.LINK}>
     {HASHNODE.OPTIONAL}
   </Link>
-
-  <Greetings />
 </section>

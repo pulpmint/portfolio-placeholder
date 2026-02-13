@@ -14,7 +14,10 @@ export const DESC = `A web developer based in India. Working with JavaScript & F
 export const GREETINGS = `I am ${NAME}.`;
 
 export const PIXEL_PERFECT =
-  "Crafting pixel-perfect, secure & performant web experiences with great attention to detail.";
+  "Crafting pixel-perfect, secure & scalable web experiences with great attention to detail.";
+
+export const DESIGN_DEV =
+  "I enjoy working at the intersection of design & engineering, where great user experience meets robust & clean code.";
 
 export const DANPEN = {
   LABEL: "Danpen",
