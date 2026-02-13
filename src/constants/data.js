@@ -14,7 +14,10 @@ export const DESC = `A web developer based in India. Working with JavaScript & F
 export const GREETINGS = `I am ${NAME}.`;
 
 export const PIXEL_PERFECT =
-  "Crafting pixel-perfect, secure & performant web experiences with great attention to detail.";
+  "Crafting pixel-perfect, secure & scalable web experiences with great attention to detail.";
+
+export const DESIGN_DEV =
+  "I enjoy working at the intersection of design & engineering, where great user experience meets robust & clean code.";
 
 export const DANPEN = {
   LABEL: "Danpen",
@@ -106,27 +109,27 @@ export const SOCIALS = [GITHUB, CODEPEN, TWITTER, HASHNODE];
 
 export const FAQS = [
   {
-    QUESTION: "What's with all the text?",
+    QUESTION: "What are you currently working on?",
     ANSWER:
-      "I'm busy working on the actual site. It is expected to go live within the next 69 years."
+      "Currently tinkering with a modular checkout finance flow that supercharges merchants — seamless plug-and-play modules for user onboarding, EMI, KYC & autopay, all in one powerhouse system."
   },
   {
-    QUESTION: "What did you use for this site?",
+    QUESTION: "What is your thought process for a project?",
     ANSWER:
-      "For this one, I just used Astro & some good old CSS for styles. Plain & simple."
+      "Clarify the goal & design, decide a tech stack, draft a spec doc, client / stakeholder sync & refinement, create small independent sub-tasks, test cases & deploy. The process more or less remains the same. First 4 steps are the key."
   },
   {
-    QUESTION: "What are you using for the actual site?",
+    QUESTION: "What do you do when you are not coding?",
     ANSWER:
-      "I'm using Next.js & TypeScript along with TailwindCSS for styles & GSAP for animations."
+      "Busy chasing sunsets, capturing & writing about the simplest little things while roaming around the outskirts on my two-wheeler or strumming mellow tunes on ukulele in my balcony."
   },
   {
-    QUESTION: "This is ugly.",
-    ANSWER: "Yes but that is not a question."
+    QUESTION: "What would you do if you were not a dev?",
+    ANSWER: "Probably a photographer or a designer."
   }
 ];
 
-export const MORE_QUESTIONS = "Have more questions?";
+export const MORE_QUESTIONS = "Have more questions or a project in mind?";
 
 export const COPYRIGHT = `🧙‍♂️ Manmohan Singh`;
 
