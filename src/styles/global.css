@@ -1,80 +1,85 @@
-:root {
-  --bg-light: #f5f5f5;
-  --bg-dark: #fafafa;
-  --text: #404040;
-  --base: #749473;
-  --base-light: #e3eae1;
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "Cascadia Code", monospace;
+  --font-display: "VT323", monospace;
+  --color-light: #f5f5f5;
+  --color-base: #404040;
+  --color-dark: #fafafa;
+  --color-lime-base: #749473;
+  --color-lime-light: #e3eae1;
+  --leading-base: 1.25;
   --cursor-normal: url("/cursor-normal.svg");
-  --cursor-pointer: url("/cursor-pointer.svg");
+  --cursor-hand: url("/cursor-pointer.svg");
 }
 
-html {
-  cursor: var(--cursor-normal), auto;
-}
+@layer {
+  * {
+    @apply leading-base cursor-normal font-mono text-base;
+  }
 
-body {
-  max-width: 540px;
-  margin: 0px auto;
-  padding: 4rem 0px;
-  font-family: "Cascadia Code", monospace;
-  line-height: 1.25;
-  color: var(--text);
-  background: repeating-linear-gradient(
-    var(--bg-light) 0px,
-    var(--bg-light) 1px,
-    var(--bg-dark) 1px,
-    var(--bg-dark) 5px
-  );
-}
+  body {
+    @apply mx-auto max-w-lg py-20;
 
-header {
-  margin: 12rem auto;
-  text-align: center;
-}
+    background: repeating-linear-gradient(
+      var(--color-light) 0px,
+      var(--color-light) 1px,
+      var(--color-dark) 1px,
+      var(--color-dark) 5px
+    );
+  }
 
-section,
-footer {
-  margin: 4rem 0px;
-  padding: 0px 2rem;
-}
+  header {
+    @apply my-40 text-center;
+  }
 
-h1 {
-  font-size: 4rem;
-}
+  footer,
+  section {
+    @apply my-16 px-8;
+  }
 
-h2 {
-  font-size: 1.5rem;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  hr {
+    @apply my-4;
+  }
 
-h1,
-h2 {
-  font-family: "VT323", monospace;
-  font-weight: 400;
-}
+  h1,
+  h2 {
+    @apply font-display;
+  }
 
-a {
-  color: var(--base);
-  font-weight: 700;
-  cursor: var(--cursor-pointer), auto;
-}
+  h1 {
+    @apply text-6xl;
+  }
 
-a:hover {
-  background-color: var(--base-light);
-}
+  h2 {
+    @apply text-2xl;
+  }
 
-table {
-  width: 100%;
-}
+  a {
+    @apply text-lime-base hover:bg-lime-light cursor-hand font-bold underline;
+  }
 
-tr {
-  vertical-align: baseline;
-}
+  table {
+    @apply w-full;
+  }
 
-p,
-td {
-  padding: 0.5rem 0.25rem;
-}
+  tr {
+    @apply align-baseline;
+  }
 
-img {
-  margin: 2rem 0px;
+  p,
+  td {
+    @apply px-1 py-2;
+  }
+
+  img {
+    @apply my-8 max-w-full;
+  }
 }
