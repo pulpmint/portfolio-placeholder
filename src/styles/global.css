@@ -13,7 +13,7 @@
   --cursor-hand: url("/cursor-pointer.svg"), pointer;
 }
 
-@layer {
+@layer base {
   * {
     @apply leading-base cursor-normal font-mono text-base;
   }

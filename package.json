@@ -10,14 +10,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
-    "astro": "^6.4.4",
+    "astro": "^7.2.0",
     "mixpanel-browser": "^2.66.0",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.20",
-    "@types/mixpanel-browser": "^2.60.0",
-    "lodash": "^4.17.21",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
