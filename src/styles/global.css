@@ -9,8 +9,8 @@
   --color-lime-base: #749473;
   --color-lime-light: #e3eae1;
   --leading-base: 1.25;
-  --cursor-normal: url("/cursor-normal.svg");
-  --cursor-hand: url("/cursor-pointer.svg");
+  --cursor-normal: url("/cursor-normal.svg"), auto;
+  --cursor-hand: url("/cursor-pointer.svg"), pointer;
 }
 
 @layer {
