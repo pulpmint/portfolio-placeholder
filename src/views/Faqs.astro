@@ -12,19 +12,25 @@ import { FAQS, MAIL, MAIL_TO, MORE_QUESTIONS } from "@/constants/data";
     <tbody>
       {
         FAQS.map(({ QUESTION, ANSWER }) => (
-          <tr>
-            <td><strong>Q:</strong></td>
-            <td><strong>{QUESTION}</strong></td>
-          </tr>
+          <>
+            <tr>
+              <td>
+                <strong>Q:</strong>
+              </td>
+              <td>
+                <strong>{QUESTION}</strong>
+              </td>
+            </tr>
 
-          <tr>
-            <td>A:</td>
-            <td>
-              {ANSWER}
-              <br />
-              <br />
-            </td>
-          </tr>
+            <tr>
+              <td>A:</td>
+              <td>
+                {ANSWER}
+                <br />
+                <br />
+              </td>
+            </tr>
+          </>
         ))
       }
 
@@ -36,9 +42,7 @@ import { FAQS, MAIL, MAIL_TO, MORE_QUESTIONS } from "@/constants/data";
       <tr>
         <td>A:</td>
         <td>
-          <Link isExternal href={MAIL_TO}>
-            {MAIL}
-          </Link>
+          <Link isExternal href={MAIL_TO}>{MAIL}</Link> (I might not see it)
         </td>
       </tr>
     </tbody>

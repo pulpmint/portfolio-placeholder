@@ -114,11 +114,6 @@ export const FAQS = [
       "Currently tinkering with a modular checkout finance flow that supercharges merchants — seamless plug-and-play modules for user onboarding, EMI, KYC & autopay, all in one powerhouse system."
   },
   {
-    QUESTION: "What is your thought process for a project?",
-    ANSWER:
-      "Clarify the goal & design, decide a tech stack, draft a spec doc, client / stakeholder sync & refinement, create small independent sub-tasks, test cases & deploy. The process more or less remains the same. First 4 steps are the key."
-  },
-  {
     QUESTION: "What do you do when you are not coding?",
     ANSWER:
       "Busy chasing sunsets, capturing & writing about the simplest little things while roaming around the outskirts on my two-wheeler or strumming mellow tunes on ukulele in my balcony."
