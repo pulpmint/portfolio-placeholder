@@ -9,15 +9,15 @@ export const NAME = "Manmohan Singh";
 export const TAGLINE = "Building things for the Web";
 
 export const TITLE = `${NAME} - ${TAGLINE}`;
-export const DESC = `A web developer based in India. Working with JavaScript & Figma. ${TAGLINE}.`;
+export const DESC = `A web developer based in India. Working with JavaScript and Figma. ${TAGLINE}.`;
 
 export const GREETINGS = `I am ${NAME}.`;
 
 export const PIXEL_PERFECT =
-  "Crafting pixel-perfect, secure & scalable web experiences with great attention to detail.";
+  "Crafting pixel-perfect, secure and scalable web experiences with great attention to detail.";
 
 export const DESIGN_DEV =
-  "I enjoy working at the intersection of design & engineering, where great user experience meets robust & clean code.";
+  "I enjoy working at the intersection of design and engineering, where great user experience meets robust and clean code.";
 
 export const DANPEN = {
   LABEL: "Danpen",
@@ -47,19 +47,73 @@ export const PROJECTS = [DANPEN, TWITTER_GEMS, COFFEE_HOURS, RIVI];
 
 export const EXPERIENCES = [
   {
-    DESG: "Frontend",
-    LABEL: "PayU",
-    YEAR: "2023"
+    DESG: "Software Engineer",
+    LABEL: "PayU Finance",
+    YEAR: "2023",
+    PROJECTS: [
+      {
+        TITLE: "Checkout Finance",
+        DESC: "Built a plug-and-play, all-in-one powerhouse system for merchants, covering user onboarding, EMI, credit assessment, KYC and autopay. It ended up powering BNPL and loans for big players like Meesho, Flipkart, Xiaomi, Ixigo, ShopSe and many more."
+      },
+      {
+        TITLE: "Ops Panel",
+        DESC: "Revamped the customer support portal to keep up with different merchant needs. Moved the legacy code over to newer, separate services for frontend and backend, streamlining the communication between external merchant and internal service APIs to provide better customer insights for the operations team."
+      },
+      {
+        TITLE: "XpressLoans",
+        DESC: "Rebuilt the income verification module in the XpressLoans disbursal flow, taking it from a legacy codebase to a modular React app. The newer system is simpler to work with and runs faster, while giving customers a smoother and more brand-oriented experience."
+      },
+      {
+        TITLE: "Merchant Panel",
+        DESC: "Built the BNPL merchant support portal on LazyPay from scratch. Moving off a third-party tool to an in-house one cut costs and gave product managers full control over functionality. It's now used to manage merchants like Swiggy, Zomato, Blinkit, MakeMyTrip and many more."
+      },
+      {
+        TITLE: "Web Security / Performance",
+        DESC: "Led the push on security, authentication and speed across LazyPay and PaySense, for both customer-facing and internal apps."
+      },
+      {
+        TITLE: "Developer Experience",
+        DESC: "Tidied up our GitHub pipelines for reviews, builds and test coverage, so shipping feels smoother and the team gets more done."
+      }
+    ]
   },
   {
-    DESG: "Full Stack",
-    LABEL: "Standard Chartered Bank",
-    YEAR: "2020"
+    DESG: "Busniess Analyst",
+    LABEL: "Standard Chartered",
+    YEAR: "2020",
+    PROJECTS: [
+      {
+        TITLE: "GraphQL Code Generator",
+        DESC: "Built a boilerplate generator that spins up a GraphQL project straight from the data schema and writes the code for multiple layers, so setup takes far less time and developers can start focusing on service implementation right away."
+      },
+      {
+        TITLE: "Customer Feedback Portal",
+        DESC: "Designed a config-based, plug-and-play feedback collector that any project in the company can use, plus an internal dashboard to make sense of what people say."
+      },
+      {
+        TITLE: "Deployment Pipelines",
+        DESC: "Improved multiple deployment pipelines tied into third-party managed projects to reduce production and sandbox delivery times."
+      }
+    ]
   },
   {
-    DESG: "Frontend (Intern)",
+    DESG: "Intern and Freelance",
     LABEL: "Rivi",
-    YEAR: "2019"
+    YEAR: "2019",
+    PROJECTS: [
+      {
+        TITLE: "Product Website",
+        DESC: "Redesigned and rebuilt the product website from scratch with a more brand-oriented feel, to increase web-to-app conversion rates. Also improved the SEO content to help it rank better, and plugged in a headless CMS so content and SEO updates are easy down the line."
+      },
+      {
+        TITLE: "Data Collection Tool",
+        DESC: "Designed and developed a dashboard for the machine learning and data science team to clean and manage data, ready for model training and in-app use."
+      },
+      {
+        TITLE: "Contract Projects",
+        DESC: "Looked after design and development for a mix of clients, from government projects to big brands, taking each one from first sketches to the final build while collaborating with cross-timezone teams."
+      }
+    ]
   }
 ];
 
@@ -111,12 +165,12 @@ export const FAQS = [
   {
     QUESTION: "What are you currently working on?",
     ANSWER:
-      "Currently tinkering with a modular checkout finance flow that supercharges merchants — seamless plug-and-play modules for user onboarding, EMI, KYC & autopay, all in one powerhouse system."
+      "Currently tinkering with a modular checkout finance flow that supercharges merchants — seamless plug-and-play modules for user onboarding, EMI, credit assessment, KYC and autopay, all-in-one powerhouse system."
   },
   {
     QUESTION: "What do you do when you are not coding?",
     ANSWER:
-      "Busy chasing sunsets, capturing & writing about the simplest little things while roaming around the outskirts on my two-wheeler or strumming mellow tunes on ukulele in my balcony."
+      "Busy chasing sunsets, capturing and writing about the simplest little things while roaming around the outskirts on my two-wheeler or strumming mellow tunes on ukulele in my balcony."
   },
   {
     QUESTION: "What would you do if you were not a dev?",

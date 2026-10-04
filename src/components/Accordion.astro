@@ -1,0 +1,35 @@
+---
+const { expandText = "Expand", collapseText = "Collapse" } = Astro.props;
+---
+
+<tr>
+  <table>
+    <tbody class="group">
+      <tr>
+        <td>
+          <slot name="header" />
+        </td>
+
+        <td align="right">
+          <label>
+            <input type="checkbox" />
+
+            <span class="inline group-has-[:checked]:hidden">
+              {expandText}
+            </span>
+
+            <span class="hidden group-has-[:checked]:inline">
+              {collapseText}
+            </span>
+          </label>
+        </td>
+      </tr>
+
+      <tr class="hidden group-has-[:checked]:table-row">
+        <td colspan="2">
+          <slot name="content" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</tr>

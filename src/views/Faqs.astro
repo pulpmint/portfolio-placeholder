@@ -12,7 +12,7 @@ import { FAQS, MAIL, MAIL_TO, MORE_QUESTIONS } from "@/constants/data";
     <tbody>
       {
         FAQS.map(({ QUESTION, ANSWER }) => (
-          <>
+          <Fragment>
             <tr>
               <td>
                 <strong>Q:</strong>
@@ -30,7 +30,7 @@ import { FAQS, MAIL, MAIL_TO, MORE_QUESTIONS } from "@/constants/data";
                 <br />
               </td>
             </tr>
-          </>
+          </Fragment>
         ))
       }
 

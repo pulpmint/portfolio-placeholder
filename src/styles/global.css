@@ -29,13 +29,14 @@
     );
   }
 
-  header {
-    @apply my-40 text-center;
+  header,
+  section,
+  footer {
+    @apply my-16 px-8;
   }
 
-  footer,
-  section {
-    @apply my-16 px-8;
+  header {
+    @apply my-40;
   }
 
   h1,
@@ -62,8 +63,17 @@
     @apply text-2xl;
   }
 
-  a {
+  a,
+  label * {
     @apply text-lime-base hover:bg-lime-light cursor-hand font-bold underline;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  li {
+    @apply py-2;
   }
 
   table {
@@ -80,6 +90,10 @@
   }
 
   img {
-    @apply my-8 max-w-full;
+    @apply bg-lime-light my-8 max-w-full;
+  }
+
+  input {
+    @apply sr-only;
   }
 }
