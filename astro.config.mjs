@@ -8,14 +8,9 @@ import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel";
 
 const getSiteUrl = () => {
-  const site = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  const site = `https://${process.env.VERCEL_BRANCH_URL}`;
 
-  console.log(
-    "[config] Using domain:",
-    site,
-    "for Vercel env:",
-    process.env.VERCEL_ENV
-  );
+  console.log("Using domain:", site, "for Vercel env:", process.env.VERCEL_ENV);
 
   return site;
 };
