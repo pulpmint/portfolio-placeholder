@@ -9,11 +9,10 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()]
-  },
+  adapter: vercel(),
+  vite: { plugins: [tailwindcss()] },
   site:
-    process.env.PUBLIC_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL,
-  integrations: [sitemap()],
-  adapter: vercel()
+    process.env.PUBLIC_SITE_URL ||
+    `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`,
+  integrations: [sitemap()]
 });
