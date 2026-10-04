@@ -12,7 +12,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: process.env.PUBLIC_SITE_URL,
+  site:
+    process.env.PUBLIC_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL,
   integrations: [sitemap()],
   adapter: vercel()
 });
