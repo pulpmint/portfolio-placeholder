@@ -11,8 +11,6 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   adapter: vercel(),
   vite: { plugins: [tailwindcss()] },
-  site:
-    process.env.PUBLIC_SITE_URL ||
-    `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`,
+  site: `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`,
   integrations: [sitemap()]
 });
