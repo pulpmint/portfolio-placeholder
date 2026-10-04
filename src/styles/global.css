@@ -81,6 +81,6 @@
   }
 
   img {
-    @apply my-8 max-w-full;
+    @apply bg-lime-light my-8 max-w-full;
   }
 }
