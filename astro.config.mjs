@@ -7,6 +7,8 @@ import sitemap from "@astrojs/sitemap";
 
 import { loadEnv } from "vite";
 
+import vercel from "@astrojs/vercel";
+
 const env = loadEnv(process.env.NODE_ENV || "production", process.cwd(), "");
 const siteUrl = env.PUBLIC_SITE_URL;
 
@@ -16,5 +18,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: siteUrl,
-  integrations: [sitemap()]
+  integrations: [sitemap()],
+  adapter: vercel()
 });
