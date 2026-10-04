@@ -11,7 +11,7 @@ const getSiteUrl = () => {
   const env = process.env.VERCEL_ENV;
 
   const branchUrl = process.env.VERCEL_BRANCH_URL;
-  const projectUrl = process.env.VERCEL_PROJECT_PRODUCTION_UR;
+  const projectUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
   const url = env === "production" ? projectUrl : branchUrl;
 
