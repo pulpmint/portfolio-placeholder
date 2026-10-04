@@ -1,6 +1,4 @@
 ---
-import Link from "./Link.astro";
-
 const { expandText = "Expand", collapseText = "Collapse" } = Astro.props;
 ---
 
@@ -17,11 +15,11 @@ const { expandText = "Expand", collapseText = "Collapse" } = Astro.props;
             <input type="checkbox" />
 
             <span class="inline group-has-[:checked]:hidden">
-              <Link>{expandText}</Link>
+              {expandText}
             </span>
 
             <span class="hidden group-has-[:checked]:inline">
-              <Link>{collapseText}</Link>
+              {collapseText}
             </span>
           </label>
         </td>

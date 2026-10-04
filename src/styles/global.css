@@ -63,7 +63,8 @@
     @apply text-2xl;
   }
 
-  a {
+  a,
+  label * {
     @apply text-lime-base hover:bg-lime-light cursor-hand font-bold underline;
   }
 
