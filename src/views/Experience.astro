@@ -1,4 +1,5 @@
 ---
+import Accordion from "@/components/Accordion.astro";
 import Heading from "@/components/Heading.astro";
 
 import { EXPERIENCES } from "@/constants/data";
@@ -10,16 +11,30 @@ import { EXPERIENCES } from "@/constants/data";
   <table>
     <tbody>
       {
-        EXPERIENCES.map(({ DESG, LABEL, YEAR }) => (
-          <tr>
-            <td>
+        EXPERIENCES.map(({ DESG, LABEL, YEAR, PROJECTS }) => (
+          <Accordion expandText="Read More" collapseText="Close">
+            <Fragment slot="header">
               <strong>{LABEL}</strong>
               <br />
               {DESG}
-            </td>
+              <br />
+              {YEAR}
+            </Fragment>
 
-            <td align="right">{YEAR}</td>
-          </tr>
+            <Fragment slot="content">
+              <ul>
+                {PROJECTS.map(({ TITLE, DESC }) => (
+                  <li>
+                    <strong>{TITLE}</strong>: {DESC}
+                  </li>
+                ))}
+              </ul>
+
+              <center>
+                <p>{new Array(10).fill("~").map(text => text)}</p>
+              </center>
+            </Fragment>
+          </Accordion>
         ))
       }
     </tbody>

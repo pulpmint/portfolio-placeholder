@@ -67,6 +67,14 @@
     @apply text-lime-base hover:bg-lime-light cursor-hand font-bold underline;
   }
 
+  ul {
+    @apply list-disc;
+  }
+
+  li {
+    @apply py-2;
+  }
+
   table {
     @apply w-full;
   }
@@ -82,5 +90,9 @@
 
   img {
     @apply bg-lime-light my-8 max-w-full;
+  }
+
+  input {
+    @apply sr-only;
   }
 }
