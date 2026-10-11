@@ -1,5 +1,7 @@
 ---
-import { COPYRIGHT } from "@/constants/data";
+import { Image } from "astro:assets";
+
+import Memoji from "@/assets/memoji.png";
 ---
 
 <footer>
@@ -8,10 +10,16 @@ import { COPYRIGHT } from "@/constants/data";
   <table>
     <tbody>
       <tr>
-        <td>{COPYRIGHT}</td>
-
+        <td>👾 Ki Ki Ki Ra!</td>
         <td align="right">{new Date().getFullYear()}</td>
       </tr>
     </tbody>
   </table>
+
+  <br />
+  <br />
+
+  <center>
+    <Image width={72} src={Memoji} alt="Ki Ki Ki Ra!" />
+  </center>
 </footer>
